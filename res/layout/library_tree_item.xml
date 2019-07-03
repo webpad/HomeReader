@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="5dip" >
+
+    <ImageView
+        android:id="@+id/library_tree_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="6dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/book_favorate"
+        android:layout_toRightOf="@+id/library_tree_item_icon"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/library_tree_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/library_tree_item_childrenlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="File name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/book_favorate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/reader_favorite_uncheck"
+        android:focusable="false"
+        android:padding="20dp" >
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/ll_imv_extsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/library_tree_item_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/library_tree_item_icon"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_microsd" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/library_tree_item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ll_imv_extsd"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

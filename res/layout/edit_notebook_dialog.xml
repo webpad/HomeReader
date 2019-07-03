@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/edit_noteook_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:text="@string/edit_notebook_header"
+        android:textColor="@drawable/black" 
+        android:textSize="@dimen/edit_notebook_text_size" />
+
+    <EditText
+        android:id="@+id/edit_notebook_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_noteook_header"
+        android:layout_marginTop="10dip"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:cursorVisible="true"
+        android:textColor="@drawable/black"
+        android:background="@drawable/bg_exit_text"
+        android:textSize="@dimen/edit_notebook_text_size" />
+
+    <Button
+        android:id="@+id/edit_notebook_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+        android:layout_below="@id/edit_notebook_title"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:padding="10dp"
+        android:text="@android:string/cancel"
+        android:textColor="@drawable/black"
+        android:background="@drawable/bg" 
+        android:textSize="@dimen/edit_notebook_text_size"/>
+
+    <Button
+        android:id="@+id/edit_notebook_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edit_notebook_cancel"
+        android:layout_toLeftOf="@id/edit_notebook_cancel"
+        android:text="@android:string/ok"
+        android:textColor="@drawable/black"
+        android:padding="10dp"
+        android:background="@drawable/bg" 
+        android:textSize="@dimen/edit_notebook_text_size"/>
+    
+    <Button
+        android:id="@+id/edit_notebook_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_notebook_cancel"
+        android:layout_alignBottom="@+id/edit_notebook_cancel"
+        android:layout_alignLeft="@+id/edit_notebook_title"
+        android:text="@string/edit_notebook_delete"
+        android:textColor="@drawable/black"
+        android:padding="10dp"
+        android:background="@drawable/bg" 
+        android:textSize="@dimen/edit_notebook_text_size" />
+
+    <Button
+        android:id="@+id/edit_notebook_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_notebook_delete"
+        android:layout_alignBottom="@+id/edit_notebook_delete"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/edit_notebook_delete"
+        android:text="@string/edit_notebook_export"
+        android:textColor="@drawable/black"
+        android:padding="10dp"
+        android:background="@drawable/bg" 
+        android:textSize="@dimen/edit_notebook_text_size" />
+
+</RelativeLayout>

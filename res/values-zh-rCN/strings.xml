@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>        
+    <string name="user_guide_book_filename">6.8吋电子笔记本.epub</string>
+    
+    <string name="menu_note">笔记</string>
+    <string name="menu_reader">书籍</string>
+    <string name="menu_calendar">行事历</string>
+    <string name="item_all_books">全部书籍</string>
+    
+    <string name="message_successful">成功</string>
+    <string name="search_note_not_found_hint">搜索无结果</string>
+    
+    <string name="item_reader_format">文字格式</string>
+    <string name="item_reader_search">搜寻</string>
+    <string name="item_reader_section">章节</string>
+    <string name="item_reader_bookmark">书签</string>
+    <string name="item_reader_rotate">旋转</string>
+    
+    <string name="item_reader_alignment">对齐</string>
+    <string name="item_reader_line_spacing">行间距</string>
+    <string name="item_reader_margin">边距</string>
+    <string name="item_reader_margin_top">顶边距</string>
+    <string name="item_reader_margin_bottom">底边距</string>
+    <string name="item_reader_margin_left">左边距</string>
+    <string name="item_reader_margin_right">右边距</string>
+    <string name="toolbox_message_delete_confirm_book">%s本书将会被删除, 确定要继续吗?</string>
+    <string name="toolbox_message_delete_confirm_image">%s张图将会被删除, 确定要继续吗?</string>
+    <string name="toolbox_message_delete_confirm_bookmark">确定要删除书签?\n%s</string>
+    <string name="message_failed_open">无法开启此书</string>
+    <string name="message_device_internal">内部储存</string>
+    <string name="message_device_external">外部储存</string>
+    
+</resources>

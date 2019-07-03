@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item name="primary" type="color">#444444</item>
+  <item name="primary_dark" type="color">#222222</item>
+  <drawable name="black">#000000</drawable>
+  <drawable name="white">#FFFFFF</drawable>
+  <drawable name="gray_0">#000000</drawable>
+  <drawable name="gray_1">#111111</drawable>
+  <drawable name="gray_2">#222222</drawable>
+  <drawable name="gray_3">#333333</drawable>
+  <drawable name="gray_4">#444444</drawable>
+  <drawable name="gray_5">#555555</drawable>
+  <drawable name="gray_6">#666666</drawable>
+  <drawable name="gray_7">#777777</drawable>
+  <drawable name="gray_8">#888888</drawable>
+  <drawable name="gray_9">#999999</drawable>
+  <drawable name="gray_A">#AAAAAA</drawable>
+  <drawable name="gray_B">#BBBBBB</drawable>
+  <drawable name="gray_C">#CCCCCC</drawable>
+  <drawable name="gray_D">#DDDDDD</drawable>
+  <drawable name="gray_E">#EEEEEE</drawable>
+  <drawable name="gray_F">#FFFFFF</drawable>
+  <color name="alpha_00">#00000000</color>
+	<color name="filepicker_black">#000000</color>
+</resources>

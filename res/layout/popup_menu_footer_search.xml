@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal|fill_horizontal"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="560dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:maxLength="30"
+            android:minLines="1"
+            android:paddingLeft="20dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_search_box_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_search_box_back_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/frame"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_search_box_search"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_search_box_search_style" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search_box_close"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_search_box_close_style" />
+
+</LinearLayout>

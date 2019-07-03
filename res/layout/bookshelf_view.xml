@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_shelf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="50dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/sort_button"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_sort_style"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/view_button"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/sort_button"
+            android:background="@drawable/btn_view_style_list"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/view_button"
+            android:background="@drawable/btn_search_style"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/refresh_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/search_button"
+            android:background="@drawable/btn_refresh_style" />
+
+        <TextView
+            android:id="@+id/path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/refresh_button"
+            android:layout_toRightOf="@id/refresh_button"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="30dp" />
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+    </ListView>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <Button
+            android:id="@+id/previous_page_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left|center_vertical"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/page_left" />
+
+        <TextView
+            android:id="@+id/page_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="30dp"
+            android:textSize="18dip" />
+
+        <Button
+            android:id="@+id/next_page_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right|center_vertical"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/page_right" />
+    </FrameLayout>
+
+</LinearLayout>

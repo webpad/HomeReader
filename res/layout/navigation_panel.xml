@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.geometerplus.android.fbreader.NavigationWindow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@android:color/white"
+    android:focusable="false"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <View
+	    android:layout_width="wrap_content"
+	    android:layout_height="0.5dip"
+	    android:background="#000000" />
+    
+	<TextView
+	    android:id="@+id/navigation_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:ellipsize="end"
+	    android:gravity="center_horizontal"
+	    android:paddingTop="4dp"
+	    android:singleLine="true"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textColor="@android:color/black"
+	    android:visibility="invisible" />
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="20dp"
+	                android:gravity="center_vertical|center_horizontal"
+	                android:orientation="horizontal" >
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:src="@drawable/reader_format" />
+
+                <ImageButton
+                    android:id="@+id/btn_reader_fontsize_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFFFF"
+                    android:src="@drawable/btn_reader_reduce_style" />
+
+                <SeekBar
+                    android:id="@+id/navigation_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:progressDrawable="@drawable/seek_progress_navigation"
+                    android:thumb="@drawable/seek_thumb" />
+
+                <ImageButton
+                    android:id="@+id/btn_reader_fontsize_increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFFFF"
+                    android:src="@drawable/btn_reader_increase_style" />
+            </LinearLayout>
+            
+<!-- 	<SeekBar
+	    android:id="@+id/navigation_slider"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginRight="30dp"
+	    android:maxHeight="30dp"
+	    android:minHeight="20dp"
+	    android:paddingBottom="30dp"
+	    android:paddingLeft="24dip"
+	    android:paddingRight="24dip"
+	    android:paddingTop="4dp"
+	    android:progressDrawable="@drawable/seek_progress"
+	    android:thumb="@drawable/seek_thumb" /> -->
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_below="@id/navigation_slider"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal"
+	    android:paddingBottom="4dp"
+	    android:paddingLeft="24dip"
+	    android:paddingRight="24dip"
+	    android:paddingTop="24dp"
+	    android:visibility="gone"
+	    android:weightSum="1.0" >
+
+		<Button
+		    android:id="@+id/navigation_ok"
+		    android:layout_width="0dp"
+		    android:layout_height="70dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_weight="0.45" />
+
+		<Button
+		    android:id="@+id/navigation_cancel"
+		    android:layout_width="0dp"
+		    android:layout_height="70dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_weight="0.45" />
+
+	</LinearLayout>
+</org.geometerplus.android.fbreader.NavigationWindow>

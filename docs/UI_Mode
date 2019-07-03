@@ -1,0 +1,60 @@
+UI_Mode
+1. Globals.java
+	public static boolean isUI_TestMode=true; // Just only double check.
+===============================================================
+2. imageViewToBitmap function:
+    public static Bitmap imageViewToBitmap(ImageView iv,String selectedImage,int res) {   
+
+		File fileObj = new  File(selectedImage);
+		Bitmap bitmap=null;
+		if(fileObj .exists()){
+			bitmap= BitmapFactory.decodeFile(fileObj .getAbsolutePath());
+			iv.setImageBitmap(bitmap);
+		}else{
+			iv.setImageResource(res);
+		}
+        return bitmap;
+    }
+===============================================================
+3. ImageButtonToBitmap function:
+
+    public static Bitmap ImageButtonToBitmap(ImageButton iv,String selectedImage,int res) {   
+
+		File fileObj = new  File(selectedImage);
+		Bitmap bitmap=null;
+		if(fileObj .exists()){
+			bitmap= BitmapFactory.decodeFile(fileObj .getAbsolutePath());
+			iv.setImageBitmap(bitmap);
+		}else{
+			iv.setImageResource(res);
+		}
+        return bitmap;
+    }
+===============================================================
+4. How to use:    
+   a. adapter Item:
+   	private OnItemClickListener mItemClickListener = new OnItemClickListener() {
+		@Override
+		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+
+			...
+			
+			if (mString.equalsIgnoreCase("back")) {
+				// onChangeItem(0);
+			} else if (mString.equalsIgnoreCase(menu_name_array[0])) {
+				if (Globals.isUI_TestMode && imageViewToBitmap(
+						((ImageView) arg1.findViewById(R.id.item_image))
+						,"/mnt/extsd/drawable/icon_library.png"
+						,menu_image_array[0]
+								)!=null) return;
+    		...
+    ------------------------------------------
+    b. insert microSD auto update:
+        public void uiMode(){
+			ImageButtonToBitmap(imgbtn_note,	"/mnt/extsd/drawable/btn_ic_launcher_tab_note.png",R.drawable.btn_ic_launcher_tab_note);
+			ImageButtonToBitmap(imgb_reader,	"/mnt/extsd/drawable/btn_ic_launcher_tab_reader_pressed.png",R.drawable.btn_ic_launcher_tab_reader_pressed);
+			ImageButtonToBitmap(imgbtn_settings,"/mnt/extsd/drawable/btn_ic_launcher_tab_settings.png",R.drawable.btn_ic_launcher_tab_settings);
+			ImageButtonToBitmap(imgbtn_memo_stick,"/mnt/extsd/drawable/ic_launcher_memo_stick.png",R.drawable.ic_launcher_memo_stick);
+    	}
+===============================================================
+    

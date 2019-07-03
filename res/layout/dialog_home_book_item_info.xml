@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="649dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_default2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <org.geometerplus.android.fbreader.library.EllipsizingTextView
+                    android:id="@+id/tv_book_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="20dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_language"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="28dp"
+                                android:text="@string/language"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+
+                            <TextView
+                                android:id="@+id/tv_book_language"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="28dp"
+                                android:text="@string/size"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+
+                            <TextView
+                                android:id="@+id/tv_book_size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="28dp"
+                                android:text="@string/format"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+
+                            <TextView
+                                android:id="@+id/tv_book_format"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="36dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/btn_open_book"
+                            android:layout_width="221dp"
+                            android:layout_height="63dp"
+                            android:layout_marginBottom="29dp"
+                            android:background="@drawable/btn_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/ic_reader_open" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/open_book"
+                                android:textColor="@android:color/black"
+                                android:textSize="28dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btn_delete_book"
+                            android:layout_width="221dp"
+                            android:layout_height="63dp"
+                            android:background="@drawable/btn_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/ic_reader_delete" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/delete"
+                                android:textColor="@android:color/black"
+                                android:textSize="28dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <org.geometerplus.android.fbreader.library.EllipsizingTextView
+                    android:id="@+id/tv_book_path"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="42dp"
+                    android:layout_marginBottom="22dp"
+                    android:ellipsize="middle"
+                    android:maxLines="2"
+                    android:textColor="#757575"
+                    android:textSize="22dp" />
+
+                <Button
+                    android:id="@+id/btn_close"
+                    style="@style/text_button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="@android:string/cancel" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_Item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+	<ImageView
+	    android:id="@+id/item_image"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/ic_menu_library" >
+
+</ImageView>
+
+	<TextView
+	    android:id="@+id/item_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/item_image"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="20dp"
+	    android:background="#00000000"
+	    android:gravity="center"
+	    android:text="Ext SD card"
+	    android:textColor="@drawable/black"
+	    android:textSize="24dp" >
+
+</TextView>
+</RelativeLayout>

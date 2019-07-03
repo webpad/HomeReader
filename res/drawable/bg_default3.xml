@@ -1,0 +1,16 @@
+<?xml  version = "1.0"  encoding = "utf-8" ?>  
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android" >  
+   <item >  
+      <shape  android:shape = "rectangle" >   
+         <solid  android:color = "@drawable/black"  />
+      </shape >  
+   </item >  
+   <item  android:top = "3px"  android:bottom = "3px"  android:left = "3px"  android:right = "3px" >  
+     <shape >  
+        <gradient   
+            android:startColor = "@drawable/white"  android:endColor = "@drawable/white"   
+            android:type = "linear"  android:angle = "90"  
+            android:centerX = "0.5"  android:centerY = "0.5"  />
+      </shape >  
+   </item >    
+</layer-list >  

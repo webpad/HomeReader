@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ntx_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white">
+
+<RelativeLayout android:id="@+id/ntx_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="500sp"
+    android:background="@drawable/white">
+    
+	<ImageView android:id="@+id/homer_logo"
+	    android:layout_width="290sp"
+	    android:layout_height="170sp"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginTop="10sp"
+	    android:layout_marginLeft="0sp"
+	    android:background="@drawable/homer_logo" />
+    
+	<TextView
+            android:id="@+id/txtv_battery"
+            android:layout_width="44sp"
+            android:layout_height="22sp"
+            android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/battery_icon"
+            android:gravity="center"
+            android:textColor="@drawable/gray_0"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+	<ImageView
+        android:id="@+id/imgv_battery_notice"
+        android:layout_width="14dp"
+        android:layout_height="22dp"
+        android:src="@drawable/battery_none"
+        android:layout_alignTop="@+id/txtv_battery"
+        android:layout_toLeftOf="@+id/txtv_battery" />
+<!-- 
+	<AnalogClock android:id="@+id/analog_clk"
+		android:layout_width="150sp" 
+		android:layout_height="150sp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="50sp"		
+		android:layout_marginTop="50sp"
+		android:dial="@drawable/clock_dial"  
+		android:hand_hour="@drawable/clock_hand_hour"  
+		android:hand_minute="@drawable/clock_hand_minute"/> 
+ -->
+
+<!-- 
+	<DigitalClock android:id="@+id/digital_clk"
+		android:layout_width="150sp"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@id/analog_clk"
+		android:layout_below="@id/analog_clk"
+		android:textAppearance="?android:attr/textAppearanceLargeInverse" 
+		android:gravity="center_horizontal"
+		android:textColor="#000000"
+  		/>
+-->
+
+	<ImageView android:id="@+id/homescreen_book_1"
+	    android:layout_width="250sp"
+	    android:layout_height="300sp"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginTop="170sp"
+	    android:layout_marginLeft="10sp"
+	    android:background="@color/alpha_00" />
+
+	<TextView android:id="@+id/txtv_cover01"
+	    android:layout_width="230sp"
+	    android:layout_height="260sp"
+	    android:layout_alignTop="@id/homescreen_book_1"
+	    android:layout_alignLeft="@id/homescreen_book_1"
+	    android:layout_marginLeft="10sp"
+	    android:layout_marginTop="20sp"
+	    android:background="@color/alpha_00"
+	    android:textColor="@drawable/black"
+	    android:gravity="center"
+	    android:textSize="15sp"/>
+
+	<ImageView
+	    android:id="@+id/imgv_cover01"
+	    android:layout_width="230sp"
+	    android:layout_height="260sp"
+	    android:layout_alignLeft="@id/homescreen_book_1"
+	    android:layout_alignTop="@id/homescreen_book_1"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="20dp"
+	    android:padding="10dp" />
+
+	<ImageView android:id="@+id/homescreen_book_2"
+	    android:layout_width="150sp"
+	    android:layout_height="180sp"
+	    android:layout_alignBottom="@id/homescreen_book_1"
+	    android:layout_alignLeft="@id/homescreen_book_1"
+	    android:layout_marginLeft="255sp"
+	    android:background="@color/alpha_00" />
+
+	<TextView android:id="@+id/txtv_cover02"
+	    android:layout_width="130sp"
+	    android:layout_height="140sp"
+	    android:layout_alignTop="@id/homescreen_book_2"
+	    android:layout_alignLeft="@id/homescreen_book_2"
+	    android:layout_marginLeft="10sp"
+	    android:layout_marginTop="20sp"
+	    android:background="@color/alpha_00"
+	    android:textColor="@drawable/black"
+	    android:gravity="center"
+	    android:textSize="15sp"/>
+
+	<ImageView
+	    android:id="@+id/imgv_cover02"
+	    android:layout_width="130sp"
+	    android:layout_height="140sp"
+	    android:layout_alignLeft="@id/homescreen_book_2"
+	    android:layout_alignTop="@id/homescreen_book_2"
+	    android:layout_marginLeft="10sp"
+	    android:layout_marginTop="20sp"
+	    android:padding="5dp" />
+
+	<ImageView android:id="@+id/homescreen_book_3"
+	    android:layout_width="150sp"
+	    android:layout_height="180sp"
+	    android:layout_alignBottom="@id/homescreen_book_2"
+	    android:layout_alignLeft="@id/homescreen_book_2"
+	    android:layout_marginLeft="155sp"
+	    android:background="@color/alpha_00" />
+
+	<TextView android:id="@+id/txtv_cover03"
+	    android:layout_width="130sp"
+	    android:layout_height="140sp"
+	    android:layout_alignTop="@id/homescreen_book_3"
+	    android:layout_alignLeft="@id/homescreen_book_3"
+	    android:layout_marginLeft="10sp"
+	    android:layout_marginTop="20sp"
+	    android:background="@color/alpha_00"
+	    android:textColor="@drawable/black"
+	    android:gravity="center"
+	    android:textSize="15sp"/>
+
+	<ImageView
+	    android:id="@+id/imgv_cover03"
+	    android:layout_width="130sp"
+	    android:layout_height="140sp"
+	    android:layout_alignLeft="@id/homescreen_book_3"
+	    android:layout_alignTop="@id/homescreen_book_3"
+	    android:layout_marginLeft="10sp"
+	    android:layout_marginTop="20sp"
+	    android:padding="5dp" />
+
+	<TextView
+            android:id="@+id/txtv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5sp"
+            android:layout_marginRight="8sp"
+            android:textColor="@drawable/gray_B"
+            android:textSize="18sp" />
+
+	<LinearLayout
+	    android:id="@+id/ll_imv_extsd1"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignRight="@+id/homescreen_book_1"
+	    android:layout_alignTop="@+id/homescreen_book_1"
+	    android:background="@drawable/ring"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:orientation="vertical"
+	    android:visibility="invisible" >
+
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_microsd" />
+	</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/ll_imv_extsd2"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignRight="@+id/homescreen_book_2"
+    android:layout_alignTop="@+id/homescreen_book_2"
+    android:background="@drawable/ring"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:visibility="invisible" >
+
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_microsd" />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/ll_imv_extsd3"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:layout_alignRight="@+id/homescreen_book_3"
+	    android:layout_alignTop="@+id/homescreen_book_3"
+	    android:background="@drawable/ring"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:orientation="vertical"
+	    android:visibility="invisible" >
+
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_microsd" />
+	</LinearLayout>
+</RelativeLayout>
+
+    <GridView
+        android:id="@+id/ntx_main_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="300sp"
+        android:horizontalSpacing="0sp"
+        android:verticalSpacing="0sp"
+        android:stretchMode="columnWidth"
+        android:cacheColorHint="@color/alpha_00"
+        android:listSelector="@color/alpha_00"
+        android:paddingTop="20sp"/>
+        
+</LinearLayout>

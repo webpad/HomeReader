@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/reader_format" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/btn_reader_fontsize_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFFFF"
+                    android:src="@drawable/btn_reader_reduce_style" />
+
+                <SeekBar
+                    android:id="@+id/sb_font_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:progressDrawable="@drawable/seek_progress_navigation"
+                    android:thumb="@drawable/seek_thumb" />
+
+                <ImageButton
+                    android:id="@+id/btn_reader_fontsize_increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFFFF"
+                    android:src="@drawable/btn_reader_increase_style" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:shrinkColumns="0"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_reader_alignment"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <ImageButton
+                        android:id="@+id/btn_reader_align_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="#FFFFFFFF"
+                        android:src="@drawable/btn_reader_align_none_style" />
+
+                    <ImageButton
+                        android:id="@+id/btn_reader_align_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#FFFFFFFF"
+                        android:src="@drawable/btn_reader_align_left_style" />
+
+                    <ImageButton
+                        android:id="@+id/btn_reader_align_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#FFFFFFFF"
+                        android:src="@drawable/btn_reader_align_center_style" />
+
+                    <ImageButton
+                        android:id="@+id/btn_reader_align_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#FFFFFFFF"
+                        android:src="@drawable/btn_reader_align_right_style" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_reader_line_spacing"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <ImageButton
+                        android:id="@+id/btn_reader_line_spacing_reduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFFFF"
+                        android:src="@drawable/btn_reader_reduce_style" />
+
+                    <SeekBar
+                        android:id="@+id/sb_line_spacing"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:progressDrawable="@drawable/seek_progress_navigation"
+                        android:thumb="@drawable/seek_thumb" />
+
+                    <ImageButton
+                        android:id="@+id/btn_reader_line_spacing_increase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFFFF"
+                        android:src="@drawable/btn_reader_increase_style" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_reader_margin"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="@string/item_reader_margin_top"
+                            android:textSize="30dp" />
+
+                        <Button
+                            android:id="@+id/btn_margin_top"
+                            android:layout_width="112dp"
+                            android:layout_height="57dp"
+                            android:background="@drawable/btn_reader_margin_style"
+                            android:text="0"
+                            android:textSize="36dp" />
+
+                        <ImageButton
+                            android:id="@+id/btn_top_bot_link"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:background="@drawable/btn_reader_margin_link_style" />
+
+                        <Button
+                            android:id="@+id/btn_margin_bottom"
+                            android:layout_width="112dp"
+                            android:layout_height="57dp"
+                            android:background="@drawable/btn_reader_margin_style"
+                            android:text="0"
+                            android:textSize="36dp" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/item_reader_margin_bottom"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="@string/item_reader_margin_left"
+                            android:textSize="30dp" />
+
+                        <Button
+                            android:id="@+id/btn_margin_left"
+                            android:layout_width="112dp"
+                            android:layout_height="57dp"
+                            android:background="@drawable/btn_reader_margin_style"
+                            android:text="0"
+                            android:textSize="36dp" />
+
+                        <ImageButton
+                            android:id="@+id/btn_left_right_link"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginRight="28dp"
+                            android:background="@drawable/btn_reader_margin_link_style" />
+
+                        <Button
+                            android:id="@+id/btn_margin_right"
+                            android:layout_width="112dp"
+                            android:layout_height="57dp"
+                            android:background="@drawable/btn_reader_margin_style"
+                            android:text="0"
+                            android:textSize="36dp" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/item_reader_margin_right"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

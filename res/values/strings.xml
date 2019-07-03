@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_notebook_text_size">24sp</dimen>
+        
+	<string name="app_name">HomerReader3</string>
+	<string name="settings_page_title">Homer Reader Settings</string>
+	<string name="downloader_page_title">Book Downloader</string>
+	<string name="crash_page_title">Homer Reader crash</string>
+	<string name="empty_string"></string>
+    <string name="edit_notebook_delete">Delete</string>
+    <string name="edit_notebook_export">Export</string>
+    <string name="edit_notebook_header">Description:</string>
+    <string name="edit_notebook_title">Edit notebook</string>
+    <string name="edit_notebook_title_new">Create new notebook</string>
+    <string name="user_guide_book_filename">6.8inch_notebook.epub</string>
+    
+    <string name="menu_note">Notes</string>
+    <string name="menu_reader">Books</string>
+    <string name="menu_calendar">Calendar</string>
+    <string name="item_all_books">All Books</string>
+    
+    <string name="message_successful">Successful</string>
+    <string name="search_note_not_found_hint">No match found.</string>
+    
+    <string name="item_reader_format">Format</string>
+    <string name="item_reader_search">Search</string>
+    <string name="item_reader_section">Chapter</string>
+    <string name="item_reader_bookmark">Bookmark</string>
+    <string name="item_reader_rotate">Rotate</string>
+    
+    <string name="item_reader_alignment">Alignment</string>
+    <string name="item_reader_line_spacing">Line Spacing</string>
+    <string name="item_reader_margin">Margin</string>
+    <string name="item_reader_margin_top">Top</string>
+    <string name="item_reader_margin_bottom">Bottom</string>
+    <string name="item_reader_margin_left">Left</string>
+    <string name="item_reader_margin_right">Right</string>
+    <string name="language">Language</string>
+    <string name="size">Size</string>
+    <string name="format">Format</string>
+    <string name="open_book">Open Book</string>
+    <string name="delete">Delete</string>
+    <string name="toolbox_message_delete_confirm_book">Delete %s books ?</string>
+    <string name="toolbox_message_delete_confirm_image">Delete %s images ?</string>
+    <string name="toolbox_message_delete_confirm_bookmark">Delete this bookmark?\n%s</string>
+    <string name="message_failed_open">Failed to open this book</string>
+    <string name="message_device_internal">Internal</string>
+    <string name="message_device_external">External</string>
+    
+</resources>

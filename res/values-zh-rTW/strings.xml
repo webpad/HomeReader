@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>        
+    <string name="user_guide_book_filename">6.8吋電子筆記本.epub</string>
+    
+    <string name="menu_note">筆記</string>
+    <string name="menu_reader">書籍</string>
+    <string name="menu_calendar">行事曆</string>
+    <string name="item_all_books">全部書籍</string>
+    
+    <string name="message_successful">成功</string>
+    <string name="search_note_not_found_hint">搜尋無結果</string>
+    
+    <string name="item_reader_format">文字格式</string>
+    <string name="item_reader_search">搜尋</string>
+    <string name="item_reader_section">章節</string>
+    <string name="item_reader_bookmark">書籤</string>
+    <string name="item_reader_rotate">旋轉</string>
+    
+    <string name="item_reader_alignment">對齊</string>
+    <string name="item_reader_line_spacing">行距</string>
+    <string name="item_reader_margin">邊距</string>
+    <string name="item_reader_margin_top">頂邊距</string>
+    <string name="item_reader_margin_bottom">底邊距</string>
+    <string name="item_reader_margin_left">左邊距</string>
+    <string name="item_reader_margin_right">右邊距</string>
+    <string name="language">語言</string>
+    <string name="size">大小</string>
+    <string name="format">格式</string>
+    <string name="open_book">開啟書籍</string>
+    <string name="delete">刪除</string>
+    <string name="toolbox_message_delete_confirm_book">%s本書將被刪除, 確定繼續嗎?</string>
+    <string name="toolbox_message_delete_confirm_image">%s張圖將被刪除, 確定繼續嗎?</string>
+    <string name="toolbox_message_delete_confirm_bookmark">確定要刪除書籤?\n%s</string>
+    <string name="message_failed_open">無法開啟此書</string>
+    <string name="message_device_internal">內部儲存</string>
+    <string name="message_device_external">外部儲存</string>
+    
+</resources>

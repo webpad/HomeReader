@@ -1,0 +1,585 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/include_tab"
+        layout="@layout/ntx_launcher_tab" />
+
+    <LinearLayout
+        android:id="@+id/bookshelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_tab"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/white"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/ntx_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/white" >
+
+            <TextView
+                android:id="@+id/bookshelf_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="55dp"
+                android:text="Recent Books"
+                android:textColor="#000000"
+                android:textSize="35dp" />
+
+            <TableLayout
+                android:id="@+id/recent_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookshelf_title"
+                android:layout_marginTop="30dp"
+                android:stretchColumns="*" >
+
+                <TableRow>
+
+                    <FrameLayout
+                        android:id="@+id/recent_book1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/selector1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+						    <RelativeLayout
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content" >
+						
+						        <ImageView
+						            android:id="@+id/imgv_cover01"
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book"
+						            android:scaleType="fitXY" />
+						                            
+								<ImageView
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book" />
+						        
+						    </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtv_cover01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/alpha_00"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:textColor="@drawable/black"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_imv_extsd1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ring"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_microsd" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recent_book2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/recent_book1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_toRightOf="@id/recent_book1"
+                        android:background="@drawable/selector1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+						    <RelativeLayout
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content" >
+						
+						        <ImageView
+						            android:id="@+id/imgv_cover02"
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book"
+						            android:scaleType="fitXY" />
+						                            
+								<ImageView
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book" />
+						        
+						    </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtv_cover02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/alpha_00"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:textColor="@drawable/black"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_imv_extsd2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ring"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_microsd" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recent_book3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/recent_book2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_toRightOf="@id/recent_book2"
+                        android:background="@drawable/selector1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+						    <RelativeLayout
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content" >
+						
+						        <ImageView
+						            android:id="@+id/imgv_cover03"
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book"
+						            android:scaleType="fitXY" />
+						                            
+								<ImageView
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book" />
+						        
+						    </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtv_cover03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/alpha_00"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:textColor="@drawable/black"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_imv_extsd3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ring"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_microsd" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recent_book4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/recent_book3"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_toRightOf="@id/recent_book3"
+                        android:background="@drawable/selector1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+						    <RelativeLayout
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content" >
+						
+						        <ImageView
+						            android:id="@+id/imgv_cover04"
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book"
+						            android:scaleType="fitXY" />
+						                            
+								<ImageView
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book" />
+						        
+						    </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtv_cover04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/alpha_00"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:textColor="@drawable/black"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_imv_extsd4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ring"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_microsd" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <FrameLayout
+                        android:id="@+id/recent_book5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/selector1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:orientation="vertical" >
+
+						    <RelativeLayout
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content" >
+						
+						        <ImageView
+						            android:id="@+id/imgv_cover05"
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book"
+						            android:scaleType="fitXY" />
+						                            
+								<ImageView
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book" />
+						        
+						    </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtv_cover05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/alpha_00"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:textColor="@drawable/black"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_imv_extsd5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ring"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_microsd" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recent_book6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/selector1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:orientation="vertical" >
+
+						    <RelativeLayout
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content" >
+						
+						        <ImageView
+						            android:id="@+id/imgv_cover06"
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book"
+						            android:scaleType="fitXY" />
+						                            
+								<ImageView
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book" />
+						        
+						    </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtv_cover06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/alpha_00"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:textColor="@drawable/black"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_imv_extsd6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ring"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_microsd" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recent_book7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/selector1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:layout_marginTop="40dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+						    <RelativeLayout
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content" >
+						
+						        <ImageView
+						            android:id="@+id/imgv_cover07"
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book"
+						            android:scaleType="fitXY" />
+						                            
+								<ImageView
+						            android:layout_width="150dp"
+						            android:layout_height="208dp"
+						            android:layout_centerHorizontal="true"
+						            android:background="@drawable/bg_book" />
+						        
+						    </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtv_cover07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/alpha_00"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:textColor="@drawable/black"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_imv_extsd7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ring"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_microsd" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ll_imvMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/selector1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:layout_marginTop="40dp"
+                            android:layout_width="150dp"
+                            android:layout_height="270dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/imvMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="190dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/reader_index_more" />
+
+                            <TextView
+                                android:id="@+id/txtMore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:text="More"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/recent_table"
+                android:background="#000000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:id="@+id/include_item"
+            layout="@layout/ic_file_operations" />
+        
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgv_bg_under_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/bg_launcher_under_line" />
+
+    <FrameLayout
+        android:id="@+id/dialog_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:id="@+id/alert_dialog_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true" />
+</RelativeLayout>

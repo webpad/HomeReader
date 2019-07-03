@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookmarks_tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/item_reader_bookmark"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bookmark_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_search_box_close_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#000000" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/bookmarks_this_book"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#000000"
+                android:dividerHeight="2dp" />
+
+            <ListView
+                android:id="@+id/bookmarks_all_books"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#000000"
+                android:dividerHeight="2dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_page_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp" >
+
+        <ImageButton
+            android:id="@+id/btn_first_page"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imgb_first_page" />
+
+        <ImageButton
+            android:id="@+id/btn_prev_page"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/btn_first_page"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imgb_pre_page" />
+
+        <TextView
+            android:id="@+id/tv_page_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="xx of xx"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageButton
+            android:id="@+id/btn_last_page"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imgb_last_page" />
+
+        <ImageButton
+            android:id="@+id/btn_next_page"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_last_page"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imgb_next_page" />
+    </RelativeLayout>
+
+</TabHost>

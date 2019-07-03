@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame2"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ll_more_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageButton
+                android:id="@+id/ibtn_more_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_more_recent" />
+
+            <TextView
+                android:id="@+id/txt_more_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="Recent"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/ll_more_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageButton
+                android:id="@+id/ibtn_more_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_more_favorite" />
+
+            <TextView
+                android:id="@+id/txt_more_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="Favorites"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/ll_more_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageButton
+                android:id="@+id/ibtn_more_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_more_author" />
+
+            <TextView
+                android:id="@+id/txt_more_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="Author"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/ll_more_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageButton
+                android:id="@+id/ibtn_more_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_more_title" />
+
+            <TextView
+                android:id="@+id/txt_more_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="Title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/ll_more_all_books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageButton
+                android:id="@+id/ibtn_more_all_books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_more_all_books" />
+
+            <TextView
+                android:id="@+id/txt_more_all_books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="All Books"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/ll_more_all_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/ibtn_more_all_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_more_all_images" />
+
+            <TextView
+                android:id="@+id/txt_more_all_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="Title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/ll_more_ext_sdcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageButton
+                android:id="@+id/ibtn_more_ext_sdcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_more_ext_sdcard" />
+
+            <TextView
+                android:id="@+id/txt_more_ext_sdcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="Ext SD card"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

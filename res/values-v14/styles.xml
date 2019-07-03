@@ -1,0 +1,15 @@
+<resources>
+  <style name="FBReader.Activity" parent="android:Theme.DeviceDefault">
+	</style>
+  <style name="FBReader.Activity.NoActionBar" parent="android:Theme.DeviceDefault.NoActionBar">
+	</style>
+  <style name="FBReader.Dialog" parent="android:Theme.DeviceDefault.Dialog">
+	</style>
+	<!-- <style name="AppTheme" 	parent="@android:Theme.DeviceDefault.Light.NoActionBar.Fullscreen"></style> -->
+	<style name="AppTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowFullscreen">true</item> -->
+    </style>
+	
+	<style name="AppTheme.Dialog" 	parent="@android:Theme.DeviceDefault.Light.Dialog"></style>
+</resources>
